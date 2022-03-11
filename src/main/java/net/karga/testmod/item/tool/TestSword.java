@@ -33,7 +33,7 @@ public class TestSword extends SwordItem
     {
         if(player.getLevel().isClientSide())
         {
-            boom(15, 5, player);
+            boom(15, 10, player);
             String message = "\u00A7l" + "\u00A76" + "BOOM!";
             player.sendMessage(new TextComponent(message), player.getUUID());
         }
@@ -47,8 +47,8 @@ public class TestSword extends SwordItem
         {
             double x = player.getX() + (radius * -1d) + random.nextInt((radius * 2) + 1);
             double z = player.getZ() + (radius * -1d) + random.nextInt((radius * 2) + 1);
-            player.getLevel().explode(player, x, player.getY(), z, 3f, true,
-                    Explosion.BlockInteraction.DESTROY);
+            player.getLevel().explode(player, x, player.getY(), z, 5f, true,
+                    Explosion.BlockInteraction.NONE);
         }
     }
 }

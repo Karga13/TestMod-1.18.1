@@ -29,7 +29,7 @@ public class BanHammer extends Item
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced)
     {
         String text = "\u00A7o" + "\u00A77" +
-                "Whosoever holds this hammer, if they be worthy, shall possess the power of Ban.";
+                "Whosoever holds this hammer, if they be worthy, shall possess the power of admin.";
         pTooltipComponents.add(new TextComponent(text));
     }
 
