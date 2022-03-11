@@ -1,0 +1,9 @@
+{
+  "item.testmod.tester": "Tester",
+  "item.testmod.banhammer": "§cThe Banhammer§r",
+  "item.testmod.test_sword": "Test Sword",
+  "item.testmod.test_gun": "Test Gun",
+  "item.testmod.flight_wand": "Wand Of Flight",
+  "block.testmod.test_block": "Test Block",
+  "itemGroup.testmodtab": "Test Mod"
+}
