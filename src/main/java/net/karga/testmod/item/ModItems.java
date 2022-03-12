@@ -1,6 +1,8 @@
 package net.karga.testmod.item;
 
 import net.karga.testmod.TestMod;
+import net.karga.testmod.item.food.CordonBleu;
+import net.karga.testmod.item.food.ModFoods;
 import net.karga.testmod.item.tool.*;
 import net.karga.testmod.tab.ModCreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -29,6 +31,9 @@ public class ModItems
 
     public static final RegistryObject<Item> FLIGHT_WAND = ITEMS.register("flight_wand",
             () -> new FlightWand(new Item.Properties().tab(ModCreativeModeTab.TESTMOD_TAB)));
+
+    public static final RegistryObject<Item> CORDON_BLEU = ITEMS.register("cordon_bleu",
+            () -> new CordonBleu(new Item.Properties().tab(ModCreativeModeTab.TESTMOD_TAB).food(ModFoods.CORDON_BLEU)));
 
     public static void register(IEventBus eventbus)
     {
